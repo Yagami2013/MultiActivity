@@ -31,7 +31,8 @@ public class OtherActivity extends Activity {
 				data.putExtra("name", "王二");
 				data.putExtra("age", 23);
 				
-				OtherActivity.this.setResult(1,data);
+				OtherActivity.this.setResult(RESULT_OK,data);
+				
 				OtherActivity.this.finish();
 				
 				
@@ -41,4 +42,14 @@ public class OtherActivity extends Activity {
 
 	}
 
+	@Override
+	public void onBackPressed() {
+		Intent data=new Intent();
+		data.putExtra("name", "王二");
+		data.putExtra("age", 23);
+		
+		OtherActivity.this.setResult(RESULT_OK,data);
+		
+		OtherActivity.this.finish();
+	}
 }

@@ -1,4 +1,4 @@
-package com.example.multiactivity;
+package com.example.smslistener;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -14,24 +14,7 @@ public class MainActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		Button nextButton = (Button) findViewById(R.id.next);
-		nextButton.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this,
-						OtherActivity.class);
-				intent.putExtra("name", "hou");
-				intent.putExtra("age", 22);
-
-				Bundle bundle = new Bundle();
-				bundle.putString("name", "ºî¶þ");
-				bundle.putInt("age", 22);
-				intent.putExtras(bundle);
-				startActivityForResult(intent, 1);
-
-			}
-		});
+		
 
 	}
 
