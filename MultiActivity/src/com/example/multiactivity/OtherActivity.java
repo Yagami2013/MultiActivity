@@ -14,27 +14,42 @@ public class OtherActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_other);
+
+		Intent intent = this.getIntent();
 		
-		Intent intent=this.getIntent();
-		Bundle bundle=intent.getExtras();
+		Bundle bundle= intent.getExtras();
 		String name=bundle.getString("name");
 		int age=bundle.getInt("age");
-		TextView paramView=(TextView)this.findViewById(R.id.other);
-		paramView.setText("姓名:"+name+" 年龄"+age);
-		
-		Button button=(Button)findViewById(R.id.close);
-		button.setOnClickListener(new View.OnClickListener() {
+		TextView paramView = (TextView) this.findViewById(R.id.other);
+        paramView.setText("名称："+ name + "  年龄："+ age);
+        
+        Button button=(Button)findViewById(R.id.close);
+        button.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
-			public void onClick(View v) {
+			public void onClick(View V) {
 				Intent data=new Intent();
-				data.putExtra("name", "王三");
-				data.putExtra("age", 23);  //要返回的数据
-				OtherActivity.this.setResult(1, data);//设置返回码和数据，返回码可以任意	
-				OtherActivity.this.finish();//关闭Activity
-
+				data.putExtra("name", "王二");
+				data.putExtra("age", 23);
+				
+				OtherActivity.this.setResult(RESULT_OK,data);
+				
+				OtherActivity.this.finish();
+				
+				
 			}
 		});
+
 	}
 
+	@Override
+	public void onBackPressed() {
+		Intent data=new Intent();
+		data.putExtra("name", "王二");
+		data.putExtra("age", 23);
+		
+		OtherActivity.this.setResult(RESULT_OK,data);
+		
+		OtherActivity.this.finish();
+	}
 }

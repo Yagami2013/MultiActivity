@@ -14,11 +14,12 @@ public class MainActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		Button nextButton = (Button)findViewById(R.id.next);
+		Button nextButton = (Button) findViewById(R.id.next);
 		nextButton.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
+
 				Intent intent = new Intent(MainActivity.this,OtherActivity.class);
 				intent.putExtra("name", "hou") ;     
                 intent.putExtra("age", 22) ;  
@@ -30,10 +31,12 @@ public class MainActivity extends Activity {
                 
                 startActivityForResult(intent, 1);
                 
+
 			}
 		});
-		
+
 	}
+
 
 	@Override
     protected void onActivityResult(int requestCode, int resultCode,Intent data){
@@ -41,4 +44,5 @@ public class MainActivity extends Activity {
     	super.onActivityResult(requestCode, resultCode, data);
     	
     }
+
 }

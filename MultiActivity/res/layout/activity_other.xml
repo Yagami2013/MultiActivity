@@ -5,10 +5,10 @@
     android:orientation="vertical" >"
     <TextView 
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:text="第二个 ACTIVITY!"
-        android:id="@+id/other"
-        />
+        android:id="@+id/other" />
+
     <Button 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
