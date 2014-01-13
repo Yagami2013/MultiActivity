@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#fff0f0f0</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="red">#ffff0000</color>
+    <color name="background_gray">#ffe8e8e8</color>
+    <color name="background">#ff718397</color>
+    <color name="transparent">#00000000</color>
+    <color name="bnt_text_font">#ff6c7178</color>
+    <color name="bnt_text_primary">#ffffffff</color>
+    <color name="text_primary">#ff333333</color>
+    <color name="text_secondary">#ff999999</color>
+    <color name="text_blue">#ff71aedd</color>
+    <color name="link_color">#ff42690c</color>
+    <color name="custom_black">#ff333333</color>
+    <color name="white">#ffffffff</color>
+    <color name="grey">#ff666666</color>
+    <color name="dropdown_divider_color">#ffbbbbbb</color>
+    <color name="app_cate_color">#ffa7a7a7</color>
+    <color name="app_version_color">#ffaaaaaa</color>
+    <color name="gold">#ffb89766</color>
+</resources>

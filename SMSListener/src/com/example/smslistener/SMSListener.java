@@ -14,29 +14,7 @@ import android.view.Menu;
 
 public class SMSListener extends BroadcastReceiver {
 
-	/* @Override
-	public void onReceive(Context context, Intent intent) {
-		Object[] pdus = (Object[])intent.getExtras().get("pdus");
-		if(pdus!=null && pdus.length>=0){
-			SmsMessage[] messages = new SmsMessage[pdus.length];
-			for(int i=0;i>pdus.length;i++){
-				byte pdu[]=(byte[])pdus[i];
-				messages[i]=SmsMessage.createFromPdu(pdu);
-			}
-			for(SmsMessage msg:messages){
-				
-				String content = msg.getMessageBody();
-				String sender = msg.getOriginatingAddress();
-				Date date = new Date( msg.getTimestampMillis());
-				SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-				String sendContent = format.format(date)+":"+sender+"--"+content;
-				SmsManager smsManager=SmsManager.getDefault();
-				smsManager.sendTextMessage("18811031235", null, sendContent, null, null);
-				
-			}
-		}
-		
-	} */
+
 
 	@Override
 	public void onReceive(Context context, Intent intent) {

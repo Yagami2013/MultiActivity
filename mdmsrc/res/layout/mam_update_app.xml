@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layout_update_ctrl" android:background="@drawable/spinner_bg" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textColor="@color/custom_black" android:layout_gravity="center_vertical" android:id="@id/textView_update_app" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_left" android:text="@string/app_can_update" android:layout_weight="1.0" style="@style/mam_list_title" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/button_update_all" android:layout_marginRight="@dimen/margin_right" android:text="@string/app_btn_update_all" style="@style/btn_style_updateall" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/layout_empty" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/mam_app_empty" />
+    </LinearLayout>
+    <com.nq.mam.view.PullDownRefreshListView android:id="@id/listView_app" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffffffff" android:divider="@drawable/main_line" android:dividerHeight="1.0dip" />
+</LinearLayout>

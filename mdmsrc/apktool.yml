@@ -1,0 +1,12 @@
+version: 1.5.2
+apkFileName: NQMDM-V3.0.1-anbang-0113.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '8'
+packageInfo:
+  cur_package: com.nq.mdm
+  orig_package: com.nq.mdm
+compressionType: false

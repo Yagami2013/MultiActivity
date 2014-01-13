@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textColor="@color/text_primary" android:layout_gravity="center_horizontal" android:id="@id/editText_user_name" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="@string/sign_user_name" android:ems="10" />
+    <EditText android:textColor="@color/text_primary" android:layout_gravity="center_horizontal" android:id="@id/user_password" android:layout_width="200.0dip" android:layout_height="wrap_content" android:hint="@string/user_password_hint" android:ems="10" android:singleLine="true" android:inputType="textPassword">
+        <requestFocus />
+    </EditText>
+    <TextView android:textColor="@color/red" android:id="@id/tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="18.0dip" />
+</LinearLayout>

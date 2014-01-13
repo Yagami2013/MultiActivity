@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/layout_back" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/back_icon_arrow" />
+        <TextView android:text="@string/btn_back_en" style="@style/head_btn" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/back_btn_line" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/custom_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/appCenter" android:layout_centerInParent="true" style="@style/title_bar_text" />
+    <ImageButton android:layout_gravity="center" android:id="@id/imageButton_search" android:background="@color/background" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_search" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab_height">60.0dip</dimen>
+    <dimen name="margin_left">10.0dip</dimen>
+    <dimen name="margin_right">10.0dip</dimen>
+    <dimen name="margin_top">3.0dip</dimen>
+    <dimen name="mam_list_btn_width1">70.0dip</dimen>
+    <dimen name="mam_list_btn_width2">85.0dip</dimen>
+</resources>

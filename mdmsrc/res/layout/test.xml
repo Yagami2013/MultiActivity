@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="test" />
+        <Button android:id="@id/button0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="stop service" />
+        <Button android:id="@id/button1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="start service" />
+        <Button android:id="@id/button2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="stop service" />
+        <Button android:id="@id/button3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="test info" />
+        <Button android:id="@id/button24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="push con" />
+        <Button android:id="@id/button25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="push colse" />
+        <Button android:id="@id/button26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="push set ip" />
+        <Button android:id="@id/button27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="push send message self" />
+        <Button android:id="@id/button28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="push send message all" />
+        <Button android:id="@id/button29" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test pushCommandManager" />
+        <Button android:id="@id/button30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test push app" />
+        <Button android:id="@id/button31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test VPN" />
+        <Button android:id="@id/button32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试下发wifi策略-自动连接到nqwifi" />
+        <TextView android:id="@id/tv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

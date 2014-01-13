@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@*android:color/black" android:ellipsize="start" android:layout_gravity="center_vertical" android:id="@id/textView_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" style="@style/policy_item" />
+    <TextView android:id="@id/textView_flownum" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <TextView android:id="@id/textView_is_removable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <TextView android:id="@id/textView_removal_pwd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <LinearLayout android:id="@id/layout_del" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/policy_del">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/button_del" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_delete" />
+    </LinearLayout>
+</LinearLayout>

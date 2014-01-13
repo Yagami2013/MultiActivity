@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/mam_item_background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView_app_icon" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="@dimen/margin_left" android:src="@drawable/icon_mam_icon_empty" />
+    <TextView android:textColor="@*android:color/black" android:id="@id/textView_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <TextView android:textColor="@*android:color/black" android:id="@id/textView_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <TextView android:textColor="@*android:color/black" android:id="@id/textView_package_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <TextView android:textColor="@*android:color/black" android:id="@id/textView_icon_url" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <TextView android:textColor="@*android:color/black" android:id="@id/textView_package_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <TextView android:textColor="@*android:color/black" android:id="@id/textView_wifi_download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/custom_black" android:id="@id/textView_name" android:layout_marginBottom="1.0dip" android:text="" style="@style/mam_item_name" />
+        <TextView android:textColor="@color/app_cate_color" android:id="@id/textView_developer" android:text="" style="@style/mam_item_developer" />
+    </LinearLayout>
+    <Button android:textColor="@drawable/app_normal_btn_color" android:layout_gravity="center" android:id="@id/button_install" android:background="@drawable/mam_app_normal_btn_selector" android:focusable="false" android:focusableInTouchMode="false" android:layout_marginRight="@dimen/margin_right" android:text="@string/app_btn_install" style="@style/btn_list_item_normal" />
+</LinearLayout>

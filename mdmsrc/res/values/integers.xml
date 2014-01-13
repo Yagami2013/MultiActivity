@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="pref_crash_conn_broken_threshold_default">5</integer>
+</resources>

@@ -1,0 +1,242 @@
+.class public Lorg/xbill/DNS/Tokenizer$Token;
+.super Ljava/lang/Object;
+
+
+# instance fields
+.field public type:I
+
+.field public value:Ljava/lang/String;
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, -0x1
+
+    iput v0, p0, Lorg/xbill/DNS/Tokenizer$Token;->type:I
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lorg/xbill/DNS/Tokenizer$Token;->value:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lorg/xbill/DNS/Tokenizer$1;)V
+    .locals 0
+
+    invoke-direct {p0}, Lorg/xbill/DNS/Tokenizer$Token;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic access$100(Lorg/xbill/DNS/Tokenizer$Token;ILjava/lang/StringBuffer;)Lorg/xbill/DNS/Tokenizer$Token;
+    .locals 1
+
+    invoke-direct {p0, p1, p2}, Lorg/xbill/DNS/Tokenizer$Token;->set(ILjava/lang/StringBuffer;)Lorg/xbill/DNS/Tokenizer$Token;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private set(ILjava/lang/StringBuffer;)Lorg/xbill/DNS/Tokenizer$Token;
+    .locals 1
+
+    if-gez p1, :cond_0
+
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {v0}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    throw v0
+
+    :cond_0
+    iput p1, p0, Lorg/xbill/DNS/Tokenizer$Token;->type:I
+
+    if-nez p2, :cond_1
+
+    const/4 v0, 0x0
+
+    :goto_0
+    iput-object v0, p0, Lorg/xbill/DNS/Tokenizer$Token;->value:Ljava/lang/String;
+
+    return-object p0
+
+    :cond_1
+    invoke-virtual {p2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+.end method
+
+
+# virtual methods
+.method public isEOL()Z
+    .locals 2
+
+    const/4 v0, 0x1
+
+    iget v1, p0, Lorg/xbill/DNS/Tokenizer$Token;->type:I
+
+    if-eq v1, v0, :cond_0
+
+    iget v1, p0, Lorg/xbill/DNS/Tokenizer$Token;->type:I
+
+    if-nez v1, :cond_1
+
+    :cond_0
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public isString()Z
+    .locals 2
+
+    iget v0, p0, Lorg/xbill/DNS/Tokenizer$Token;->type:I
+
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_0
+
+    iget v0, p0, Lorg/xbill/DNS/Tokenizer$Token;->type:I
+
+    const/4 v1, 0x4
+
+    if-ne v0, v1, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    iget v0, p0, Lorg/xbill/DNS/Tokenizer$Token;->type:I
+
+    packed-switch v0, :pswitch_data_0
+
+    const-string v0, "<unknown>"
+
+    :goto_0
+    return-object v0
+
+    :pswitch_0
+    const-string v0, "<eof>"
+
+    goto :goto_0
+
+    :pswitch_1
+    const-string v0, "<eol>"
+
+    goto :goto_0
+
+    :pswitch_2
+    const-string v0, "<whitespace>"
+
+    goto :goto_0
+
+    :pswitch_3
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "<identifier: "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lorg/xbill/DNS/Tokenizer$Token;->value:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ">"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :pswitch_4
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "<quoted_string: "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lorg/xbill/DNS/Tokenizer$Token;->value:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ">"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :pswitch_5
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "<comment: "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lorg/xbill/DNS/Tokenizer$Token;->value:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ">"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+    .end packed-switch
+.end method

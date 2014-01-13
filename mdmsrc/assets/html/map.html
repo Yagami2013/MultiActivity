@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Maps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map_canvas {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style>
+    <script>
+      var map;
+      var marker;
+      var myLat = 39.915;
+      var myLng = 116.404;
+      var isCenterGot = 0;
+      
+      function initialize() {
+      	try{
+      		Android.getLocation();
+      	}catch(e){}
+      	/*
+      	if(isCenterGot < 3){
+      		isCenterGot++;
+      		setTimeout(initialize, 1000);
+      		return;
+      	}
+      	*/
+      	var centerLocation = new google.maps.LatLng(myLat, myLng);
+      	
+        var mapOptions = {
+          zoom: 15,
+          center: centerLocation,
+          streetViewControl: false,
+          zoomControl: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        map = new google.maps.Map(document.getElementById('map_canvas'),
+            mapOptions);
+            
+        marker = new google.maps.Marker({
+                map: map,
+                position: centerLocation
+            });
+        isCenterGot = 11;
+        
+
+        setCenter(myLat, myLng);
+      }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://maps.googleapis.com/maps/api/js?sensor=false&' +
+            'callback=initialize';
+        document.body.appendChild(script);
+      }
+
+      function setCenter(lat, lng) {
+      	myLat = lat;
+      	myLng = lng;
+      	
+      	if(isCenterGot > 10){
+      		var centerLocation = new google.maps.LatLng(myLat, myLng);
+      		map.setCenter(centerLocation);
+      		marker.setPosition(centerLocation);
+      	}
+      	
+      	isCenterGot = 11;
+      }
+      
+      window.onload = loadScript;
+
+    </script>
+  </head>
+  <body>
+    <div id="map_canvas"></div>
+  </body>
+</html>

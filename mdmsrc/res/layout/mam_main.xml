@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/mam_app_title" />
+    <FrameLayout android:id="@id/layout_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="18.0dip" android:textColor="@*android:color/black" android:layout_gravity="center" android:id="@id/textView_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_net_not_available" />
+                <Button android:textSize="17.0sp" android:textColor="@drawable/app_update_btn_color" android:id="@id/btn_retry" android:background="@drawable/mam_app_to_update_btn_selector" android:layout_marginLeft="10.0dip" android:text="@string/app_btn_retry" style="@style/btn_detail_ctrl" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:background="@drawable/tab_bar_bg" android:baselineAligned="false" style="@style/mam_background_tab">
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.3">
+                    <Button android:textColor="@drawable/app_normal_btn_color" android:id="@id/radioButton_private" android:background="@drawable/mam_app_nav_btn_selector" android:text="@string/app_inner" style="@style/mam_btn_tab" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <Button android:textColor="@drawable/app_normal_btn_color" android:id="@id/radioButton_public" android:background="@drawable/mam_app_nav_btn_selector" android:text="@string/app_common" style="@style/mam_btn_tab" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <Button android:textColor="@drawable/app_normal_btn_color" android:id="@id/radioButton_update" android:background="@drawable/mam_app_nav_btn_selector" android:text="@string/app_update" style="@style/mam_btn_tab" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.5">
+                    <Button android:textColor="@drawable/app_normal_btn_color" android:id="@id/radioButton_my_app" android:background="@drawable/mam_app_nav_btn_selector" android:text="@string/app_mine" style="@style/mam_btn_tab" />
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/vPager" android:background="#ff000000" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="0.0dip" android:flipInterval="30" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

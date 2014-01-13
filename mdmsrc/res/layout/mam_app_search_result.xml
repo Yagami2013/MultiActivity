@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/layout_back" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="50.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/back_icon_arrow" />
+            <TextView android:text="@string/btn_back_en" style="@style/head_btn" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/back_btn_line" />
+        </LinearLayout>
+        <EditText android:layout_gravity="bottom" android:id="@id/editText_search_word" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:ems="10" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageButton android:layout_gravity="center" android:id="@id/imageButton_search" android:background="@color/background" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_search" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/layout_empty" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/mam_app_empty" />
+    </LinearLayout>
+    <com.nq.mam.view.PullDownRefreshListView android:id="@id/listView_app" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffffffff" android:divider="@drawable/main_line" android:dividerHeight="1.0dip" />
+</LinearLayout>

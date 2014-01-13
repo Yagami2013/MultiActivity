@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="counterTypes">
+        <item>Monthly</item>
+    </string-array>
+    <integer-array name="counterTypesPos">
+        <item>0</item>
+    </integer-array>
+    <string-array name="byteUnits">
+        <item>B</item>
+        <item>KB</item>
+        <item>MB</item>
+        <item>GB</item>
+        <item>TB</item>
+    </string-array>
+    <integer-array name="byteValues">
+        <item>1</item>
+        <item>1024</item>
+        <item>1048576</item>
+        <item>1073741824</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="entries_list_preference">
+        <item>Release</item>
+        <item>Verify</item>
+        <item>App</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>http://cmg.netqin.com:8297/BOSS_CS_MG/MGServlet</item>
+        <item>http://verify.netqin.com:8297/BOSS_CS_MG/MGServlet</item>
+        <item>http://release.netqin.com:8297/BOSS_CS_MG/MGServlet</item>
+    </string-array>
+    <string-array name="day_31">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="regular_meter_value">
+        <item>7</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="adjust_aswitch_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="regular_scans_value">
+        <item>7</item>
+        <item>15</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="digits">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="plix_grid_btn_name">
+        <item>Search</item>
+        <item>Task</item>
+        <item>Files</item>
+        <item>Installed</item>
+    </string-array>
+    <string-array name="plix_network_values_list_preference">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="plix_ALERT_FILE_MENUS">
+        <item>Copy</item>
+        <item>Move</item>
+        <item>Rename</item>
+        <item>Delete</item>
+    </string-array>
+    <string-array name="plix_menus_back">
+        <item></item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_file_menus">
+        <item>New</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_browser_menus">
+        <item>Marks</item>
+        <item>Input URL</item>
+        <item>Main</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_down_soft_menus">
+        <item>Install</item>
+        <item>Rename</item>
+        <item>Delete</item>
+        <item>Delete all</item>
+        <item>Open file</item>
+        <item>Reload</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_down_music_menus">
+        <item>Open</item>
+        <item>Rename</item>
+        <item>Delete</item>
+        <item>Delete all</item>
+        <item>Set as ringtone</item>
+        <item>Reload</item>
+        <item>Open file</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_down_image_menus">
+        <item>Open</item>
+        <item>Rename</item>
+        <item>Delete</item>
+        <item>Delete all</item>
+        <item>Set as wallpaper</item>
+        <item>Reload</item>
+        <item>Open file</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_down_other_menus">
+        <item>Open</item>
+        <item>Rename</item>
+        <item>Delete</item>
+        <item>Delete all</item>
+        <item>Open file</item>
+        <item>Reload</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_downloading_menus">
+        <item>Pause</item>
+        <item>Pause all</item>
+        <item>Delete</item>
+        <item>Delete all</item>
+        <item>Reload</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_download_pause_menus">
+        <item>Start</item>
+        <item>Start all</item>
+        <item>Delete</item>
+        <item>Delete all</item>
+        <item>Reload</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_install_menus">
+        <item>Open</item>
+        <item>Uninstall</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_install_update_menus">
+        <item>Update</item>
+        <item>Firing</item>
+        <item>Review</item>
+        <item>Uninstall</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_item_downloading">
+        <item>View progress</item>
+        <item>Reload</item>
+    </string-array>
+    <string-array name="plix_item_downloaded_soft">
+        <item>Install</item>
+        <item>Reload</item>
+    </string-array>
+    <string-array name="plix_item_downloaded_other">
+        <item>Open</item>
+        <item>Reload</item>
+    </string-array>
+    <string-array name="plix_item_downloaded_installed">
+        <item>Firing</item>
+        <item>Reload</item>
+    </string-array>
+    <string-array name="plix_item_language">
+        <item>Depend on System</item>
+        <item>Chinese</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="plix_item_language_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="plix_buttons_downloaded_soft">
+        <item>Install</item>
+        <item>Delete</item>
+    </string-array>
+    <string-array name="plix_buttons_downloaded_other">
+        <item>Open</item>
+        <item>Delete</item>
+    </string-array>
+    <string-array name="plix_buttons_installed">
+        <item>Open</item>
+        <item>Uninstall</item>
+    </string-array>
+    <string-array name="plix_buttons_update">
+        <item>Update</item>
+        <item>Open</item>
+    </string-array>
+    <string-array name="plix_buttons_undownload">
+        <item>Download</item>
+    </string-array>
+    <string-array name="plix_buttons_download">
+        <item>Download</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_manager_center_text">
+        <item>Downloaded</item>
+        <item>Downloading</item>
+        <item>Uninstall</item>
+        <item>Browser</item>
+        <item>Installed</item>
+        <item>File Mgmt</item>
+        <item>Recommend</item>
+        <item>Feedback</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="plix_soft_manager_alert_menu">
+        <item>Open</item>
+        <item>Uninstall</item>
+        <item>Detail</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_upgrade_alert_menu">
+        <item>Upgrade</item>
+        <item>Detail</item>
+        <item>Cancel</item>
+        <item>Launch</item>
+        <item>Uninstall</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_upgrade_pause_alert_menu">
+        <item>StopUpgrade</item>
+        <item>Detail</item>
+        <item>Cancel</item>
+        <item>Launch</item>
+        <item>Uninstall</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_upgrade_start_alert_menu">
+        <item>Upgrade</item>
+        <item>Detail</item>
+        <item>Cancel</item>
+        <item>Launch</item>
+        <item>Uninstall</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_upgrade_install_alert_menu">
+        <item>Install</item>
+        <item>Detail</item>
+        <item>Cancel</item>
+        <item>Launch</item>
+        <item>Uninstall</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_down_start_soft_menus">
+        <item>Launch</item>
+        <item>Rename</item>
+        <item>Delete</item>
+        <item>DeleteAll</item>
+        <item>OpenFile</item>
+        <item>DownloadAgain</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_backup_way">
+        <item>Backup to server</item>
+        <item>Backup to sdcard</item>
+    </string-array>
+    <string-array name="plix_skin_names">
+        <item>Blueidea</item>
+        <item>Greentracer</item>
+        <item>LateAutumn</item>
+        <item>NightMode</item>
+    </string-array>
+    <string-array name="plix_error_list_soft">
+        <item>Install failed</item>
+        <item>Installed done, running failed</item>
+        <item>Threats in app</item>
+        <item>App not match details</item>
+        <item>Undesirable content in app</item>
+    </string-array>
+    <string-array name="plix_share_user_info_menu">
+        <item>\@He</item>
+        <item>Message him</item>
+        <item>Home</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_share_detail_menu">
+        <item>Forward</item>
+        <item>Comment</item>
+        <item>Home</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_share_write_menu">
+        <item>Pictures</item>
+        <item>\@</item>
+        <item>Topics</item>
+        <item>Expressions</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_share_transpond_menu">
+        <item>\@</item>
+        <item>Topics</item>
+        <item>Expressions</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_select_get_photo_way">
+        <item>From Camera</item>
+        <item>From Gallery</item>
+    </string-array>
+    <string-array name="plix_share_tab_names">
+        <item>Message</item>
+        <item>Friends said</item>
+        <item>Square</item>
+    </string-array>
+    <string-array name="plix_share_message_tab_names">
+        <item>\@Me</item>
+        <item>Comment</item>
+        <item>Private Message</item>
+    </string-array>
+    <string-array name="plix_mark_comment">
+        <item>Rate</item>
+        <item>Not good</item>
+        <item>So so</item>
+        <item>Nice</item>
+        <item>Recommend</item>
+        <item>Strong recommend</item>
+    </string-array>
+    <string-array name="plix_share_menus_name">
+        <item>My Profile</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="plix_share_user_table_names">
+        <item>Corcern</item>
+        <item>Fans</item>
+        <item>MicroBlog</item>
+        <item>Recent downloaded</item>
+        <item>\@Me</item>
+        <item>Comment</item>
+        <item>Private Message</item>
+    </string-array>
+    <string-array name="plix_main_tab_names">
+        <item>Resource List</item>
+        <item>Download Center</item>
+        <item>Friends</item>
+        <item>Search</item>
+    </string-array>
+    <string-array name="plix_share_menu_names_write">
+        <item>Write MicroBlog</item>
+        <item>Home</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_share_menu_names_new_theme">
+        <item>New Topic</item>
+        <item>Home</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_share_menu_names_private_dialog">
+        <item>Reply</item>
+        <item>Home</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="plix_share_detail_comment_menu">
+        <item>Comment</item>
+        <item>Home</item>
+        <item>Back</item>
+    </string-array>
+    <string-array name="keepalive_period">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+    <string-array name="keepalive_period_values">
+        <item>FIVE_MIN</item>
+        <item>TEN_MIN</item>
+        <item>FIFTEEN_MIN</item>
+        <item>THIRTY_MIN</item>
+    </string-array>
+    <string-array name="crash_conn_broken_thresholds">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="crash_conn_broken_threshold_values">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+</resources>
