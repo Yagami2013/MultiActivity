@@ -3,6 +3,7 @@
     package="com.example.smslistener"
     android:versionCode="1"
     android:versionName="1.0" >
+    <!-- package="com.example.smslistener"命名应用程序的包名 -->
 
     <uses-sdk
         android:minSdkVersion="8"
